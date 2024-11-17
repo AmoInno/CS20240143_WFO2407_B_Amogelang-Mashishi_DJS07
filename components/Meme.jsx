@@ -4,8 +4,29 @@ export default function Meme() {
   return (
     <>
       <form className="form">
-        <input type="text" placeholder="Top text" className="form--input" />
-        <input type="text" placeholder="Bottom text" className="form--input" />
+        <div>
+          <label htmlFor="top-text" className="form--label">
+            Top text
+          </label>
+          <input
+            id="top-text"
+            type="text"
+            placeholder="Shut Up"
+            className="form--input"
+          />
+        </div>
+        <div>
+          <label htmlFor="bottom-text" className="form--label">
+            Bottom text
+          </label>
+
+          <input
+            id="bottom-text"
+            type="text"
+            placeholder="And Take My Money"
+            className="form--input"
+          />
+        </div>
         <button className="form--button">Get a new meme image 🖼️</button>
       </form>
     </>
